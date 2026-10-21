@@ -1,0 +1,68 @@
+{
+  "_note": "= run_train_test_5_4_CAT_episode_clean.py",
+  "homes": [
+    {
+      "name": "koyama_an_2",
+      "labeled_tsv": "./realhome_label_project/episode_clean/koyama_an_2_labeled.tsv",
+      "unlabeled_tsv": "./realhome_label_project/koyama_an_2_unlabeled.tsv",
+      "batch_index_tsv": "./realhome_label_project/clap-vectors/output/batch_index_koyama_an_2.tsv",
+      "feature_dir": "./realhome_label_project/clap-vectors/output/database-DESKTOP-0D3M52K koyama-an 2回目.db"
+    },
+    {
+      "name": "takaki_teraoka_2",
+      "labeled_tsv": "./realhome_label_project/episode_clean/takaki_teraoka_2_labeled.tsv",
+      "unlabeled_tsv": "./realhome_label_project/takaki_teraoka_2_unlabeled.tsv",
+      "batch_index_tsv": "./realhome_label_project/clap-vectors/output/batch_index_takaki_teraoka_2.tsv",
+      "feature_dir": "./realhome_label_project/clap-vectors/output/database-dt-n06ieir takaki teraoka 2回目.db"
+    },
+    {
+      "name": "sqlite_JAXA_MINISFORUM",
+      "labeled_tsv": "./realhome_label_project/episode_clean/sqlite_JAXA_MINISFORUM_labeled.tsv",
+      "unlabeled_tsv": "./realhome_label_project/sqlite_JAXA_MINISFORUM_unlabeled.tsv",
+      "batch_index_tsv": "./realhome_label_project/clap-vectors/output/batch_index_sqlite_JAXA_MINISFORUM.tsv",
+      "feature_dir": "./realhome_label_project/clap-vectors/output/sqlite JAXA MINISFORUM銀.db"
+    },
+    {
+      "name": "engawa_MINISFORUM_1",
+      "labeled_tsv": "./realhome_label_project/episode_clean/engawa_MINISFORUM_1_labeled.tsv",
+      "unlabeled_tsv": "./realhome_label_project/engawa_MINISFORUM_1_unlabeled.tsv",
+      "batch_index_tsv": "./realhome_label_project/clap-vectors/output/batch_index_engawa_MINISFORUM_1.tsv",
+      "feature_dir": "./realhome_label_project/clap-vectors/output/database-engawa-MINISFORUM黒 1回目.db"
+    },
+    {
+      "name": "koyama_an_1",
+      "labeled_tsv": "./realhome_label_project/episode_clean/koyama_an_1_labeled.tsv",
+      "unlabeled_tsv": "./realhome_label_project/koyama_an_1_unlabeled.tsv",
+      "batch_index_tsv": "./realhome_label_project/clap-vectors/output/batch_index_koyama_an_1.tsv",
+      "feature_dir": "./realhome_label_project/clap-vectors/output/database-DESKTOP-0D3M52K koyama-an 1回目.db"
+    },
+    {
+      "name": "takaki_teraoka_1",
+      "labeled_tsv": "./realhome_label_project/episode_clean/takaki_teraoka_1_labeled.tsv",
+      "unlabeled_tsv": "./realhome_label_project/takaki_teraoka_1_unlabeled.tsv",
+      "batch_index_tsv": "./realhome_label_project/clap-vectors/output/batch_index_takaki_teraoka_1.tsv",
+      "feature_dir": "./realhome_label_project/clap-vectors/output/database-dt-n06ieir takaki teraoka 1回目.db"
+    }
+  ],
+  "heldout": null,
+  "output_dir": "outputs",
+  "num_workers": 16,
+  "domain_mode": "multi_source_target",
+  "seed": 189,
+  "epochs": 50,
+  "lr": 0.001,
+  "batch_size": 64,
+  "sched_step": 30,
+  "sched_gamma": 0.5,
+  "domain_batch_size": 64,
+  "cat_k": 5,
+  "cat_weight": 1.0,
+  "cat_start_epoch": 0,
+  "cat_bank_momentum": 0.0,
+  "cat_normalize_l2": true,
+  "cat_refresh_bank_at_start": true,
+  "cat_window_len": 50,
+  "cat_window_min_len": 5,
+  "mlp_ce_weight": 0.0,
+  "gru_ce_weight": 1.0
+}

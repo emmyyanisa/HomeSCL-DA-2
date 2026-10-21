@@ -1,0 +1,102 @@
+{
+  "homes": [
+    {
+      "name": "home_1",
+      "labeled_tsv": "data/home_1/labeled.tsv",
+      "unlabeled_tsv": "data/home_1/unlabeled.tsv",
+      "batch_index_tsv": "data/home_1/batch_index.tsv",
+      "feature_dir": "data/home_1/features"
+    },
+    {
+      "name": "home_2",
+      "labeled_tsv": "data/home_2/labeled.tsv",
+      "unlabeled_tsv": "data/home_2/unlabeled.tsv",
+      "batch_index_tsv": "data/home_2/batch_index.tsv",
+      "feature_dir": "data/home_2/features"
+    },
+    {
+      "name": "home_3",
+      "labeled_tsv": "data/home_3/labeled.tsv",
+      "unlabeled_tsv": "data/home_3/unlabeled.tsv",
+      "batch_index_tsv": "data/home_3/batch_index.tsv",
+      "feature_dir": "data/home_3/features"
+    },
+    {
+      "name": "home_4",
+      "labeled_tsv": "data/home_4/labeled.tsv",
+      "unlabeled_tsv": "data/home_4/unlabeled.tsv",
+      "batch_index_tsv": "data/home_4/batch_index.tsv",
+      "feature_dir": "data/home_4/features"
+    },
+    {
+      "name": "home_5",
+      "labeled_tsv": "data/home_5/labeled.tsv",
+      "unlabeled_tsv": "data/home_5/unlabeled.tsv",
+      "batch_index_tsv": "data/home_5/batch_index.tsv",
+      "feature_dir": "data/home_5/features"
+    },
+    {
+      "name": "home_6",
+      "labeled_tsv": "data/home_6/labeled.tsv",
+      "unlabeled_tsv": "data/home_6/unlabeled.tsv",
+      "batch_index_tsv": "data/home_6/batch_index.tsv",
+      "feature_dir": "data/home_6/features"
+    }
+  ],
+  "classes": [
+    "cooking",
+    "eating",
+    "going_out",
+    "go_to_toilet",
+    "taking_bath",
+    "washing"
+  ],
+  "heldout": null,
+  "output_dir": "outputs",
+  "dedup_chains": true,
+  "dedup_keep": "longest",
+  "dedup_classes": null,
+  "clap_dim": 1024,
+  "mlp_hidden1": 256,
+  "mlp_hidden2": 64,
+  "gru_hidden": 128,
+  "gru_layers": 2,
+  "dropout": 0.5,
+  "epochs": 50,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "batch_size": 64,
+  "sched_step": 50,
+  "sched_gamma": 0.5,
+  "grad_clip": 1.0,
+  "weight_cap": 5.0,
+  "adasyn_k": 5,
+  "adasyn_multiplier": 1.0,
+  "ablation": "dann",
+  "domain_mode": "multi_source_target",
+  "use_unlabeled_target": true,
+  "domain_hidden": 64,
+  "domain_lambda_max": 1.0,
+  "domain_lambda_cap": 0.2,
+  "domain_warmup_epochs": 5,
+  "domain_samples_per_home": 10,
+  "domain_min_batches": 8,
+  "domain_window_len": 50,
+  "domain_window_min_len": 5,
+  "supcon_start_epoch": 11,
+  "supcon_weight": 0.2,
+  "supcon_temperature": 0.1,
+  "supcon_proj_dim": 64,
+  "select_top_frac": 0.1,
+  "select_min_per_cell": 2,
+  "select_require_match": true,
+  "supcon_homes_per_class": 3,
+  "supcon_samples_per_home": 2,
+  "supcon_min_batches": 8,
+  "seed": 42,
+  "num_workers": 4,
+  "cache_size": 4,
+  "track_heldout": true,
+  "save_plots": true,
+  "device": "auto"
+}
